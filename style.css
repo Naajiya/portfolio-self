@@ -1,0 +1,295 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Playwrite NG Modern", cursive;
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.list-items {
+    display: inline;
+    margin: 0px 20px 20px;
+}
+
+.links {
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+    font-weight: bold;
+}
+
+.h-content {
+    /* margin-top: 130px;
+    margin-left: 8%; */
+    margin: 13% 0% 0% 8%;
+}
+
+#uname {
+    font-size: 40px;
+    margin-bottom: 18px;
+    font-family: "Playwrite AT", cursive;
+}
+
+#lname {
+    font-size: 40px;
+    color: rgb(255, 67, 67);
+}
+
+#user-details {
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.downd {
+    display: inline-block;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.links:hover {
+    color: orangered;
+}
+
+.h-images {
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0%;
+    right: 40px;
+}
+
+.grop1 {
+
+    height: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 2s, left 1s;
+}
+
+.h-images:hover #shape {
+    bottom: 40px;
+}
+
+.h-images:hover #girl {
+    left: 45%;
+}
+
+#about {
+    margin: 15% 8% 0% 8%;
+}
+
+.section-head {
+    text-align: center;
+}
+
+.main-head {
+    font-size: 40px;
+
+}
+
+.sub-head {
+    font-size: 20px;
+    color: rgb(114, 180, 15);
+
+
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    /* padding: 10px; */
+
+}
+
+/* #about-image > img{
+    /* height: 300px;
+    width: 400px; */
+/* } */
+*/ .about-details {
+    font-size: 18px;
+    text-align: justify;
+    padding: 50px;
+}
+
+.intormation {
+    margin-top: 20px;
+}
+
+.info-box {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.info-box>span {
+    margin-left: 20px;
+}
+
+#in {
+    text-decoration: none;
+}
+
+
+.skills {
+    margin: 8% 8% 0% 8%;
+
+}
+
+.myskills {
+    width: 100%;
+}
+
+.skill-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: 1fr 1fr; */
+    gap: 2rem;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0px;
+    position: relative;
+}
+
+.bar-head,
+.bar-perc {
+    font-size: 1.1rem;
+    font-weight: 550;
+}
+
+.base-bar {
+    width: 100%;
+    height: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: rgb(88, 82, 82);
+    bottom: 0px;
+    position: absolute;
+}
+
+.html-bar {
+    width: 93%;
+    background-color: tomato;
+}
+
+.css-bar {
+    width: 87%;
+    background-color: tomato;
+}
+
+.js-bar {
+    width: 82%;
+    background-color: tomato;
+}
+
+#contact {
+    margin: 8%;
+}
+
+.icon-collection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    /* position: relative; */
+}
+
+.icon{
+    /* position: absolute; */
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    /* border: 2px solid black; */
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 8px;
+} 
+ 
+.icon:hover{
+    background-image: linear-gradient(to bottom right, white,yellow, rgb(255, 70, 24), red);
+}
+
+.brand{
+    color: black;
+    font-size: 26px;
+}
+
+.brand:hover{
+    color: white;
+}
+
+@keyframes rotates {
+    0%{
+        transform: rotate(30deg);
+    }20%{
+        transform: rotate(-30deg);
+    }
+    40%{
+        transform: rotate(30deg);
+    }60%{
+        transform: rotate(-30deg);
+    }80%{
+        transform: rotate(30deg);
+    }100%{
+        transform: rotate(-30deg);
+    }
+
+}
+
+.icon:hover{
+    /* animation-name: rotates; */
+    animation: rotates 1s;
+}
+
+#copyright{
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.up-arow{
+    float: right;
+    margin: -40px 30px 30px 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 20px;
+    border-radius: 10px;
+    /* color: yellow; */
+}
+
+::-webkit-scrollbar-track{
+    background-color: azure;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(236, 240, 34);
+    border-radius: 20px;
+}

@@ -1,0 +1,5 @@
+inline element n margin kodkkan pattilla
+
+display: inline-block;
+
+psedo
